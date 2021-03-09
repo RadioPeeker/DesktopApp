@@ -19,7 +19,7 @@ const createWindow = () => {
   win.removeMenu()
   win.loadURL("https://radiopeeker.com")
   win.webContents.on('did-finish-load', function() {
-    win.webContents.insertCSS('.toggleColour {-webkit-app-region: drag} ::-webkit-scrollbar {display: none;}')
+    win.webContents.insertCSS('html, body {-webkit-user-select: none;}.toggleColour {-webkit-app-region: drag} ::-webkit-scrollbar {display: none;}')
  });
 };
 
